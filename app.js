@@ -116,8 +116,8 @@ function loadGenreMovies(movieGenre, url) {
             <div class="card">
                   <img src="http://image.tmdb.org/t/p/w500/${item.poster_path}" alt="">
                   <div class="descriptions">
-                      <h1>${item.original_title}</h1>
-                      <h4>Release Date: ${item.release_date}</h4>
+                      <h4>${item.original_title}</h4>
+                      <h6>Release Date: ${item.release_date}</h6>
                       <p>${item.overview}</p>
                       <button onclick="loadTrailer('${response.data.results[0].key}')">
                           <i class="fab fa-youtube"></i>
@@ -153,8 +153,8 @@ function loadPopularOrUpcomingOrTopRatedMovies(movieGenre, url) {
           <div class="card">
                 <img src="http://image.tmdb.org/t/p/w500/${item.poster_path}" alt="">
                 <div class="descriptions">
-                    <h1>${item.original_title}</h1>
-                    <h4>Release Date: ${item.release_date}</h4>
+                    <h4>${item.original_title}</h4>
+                    <h6>Release Date: ${item.release_date}</h6>
                     <p>${item.overview}</p>
                     <button onclick="loadTrailer('${response.data.results[0].key}')">
                         <i class="fab fa-youtube"></i>
